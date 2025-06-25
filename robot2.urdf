@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0100015232804372 -0.188 0.680251527580455"
+        rpy="0 0 0" />
+      <mass
+        value="151.987776798697" />
+      <inertia
+        ixx="26.5560133098248"
+        ixy="-6.03696093062538E-15"
+        ixz="-8.16802809130825E-14"
+        iyy="25.8288343610951"
+        iyz="-2.29179505102157E-15"
+        izz="2.85405837338555" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L_Link0">
+    <inertial>
+      <origin
+        xyz="0 0 0.0385"
+        rpy="0 0 0" />
+      <mass
+        value="1.5871231838156" />
+      <inertia
+        ixx="0.00338744991532377"
+        ixy="2.49755224981942E-35"
+        ixz="1.51205872850592E-35"
+        iyy="0.00338744991532377"
+        iyz="1.31904908432684E-35"
+        izz="0.00520655760450708" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint0"
+    type="fixed">
+    <origin
+      xyz="0 -0.0030176 0.95"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_Link0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="L_Link1">
+    <inertial>
+      <origin
+        xyz="1.69435974772814E-06 -0.038673114677046 0.0598560183681658"
+        rpy="0 0 0" />
+      <mass
+        value="0.822277875182316" />
+      <inertia
+        ixx="0.00232179687939315"
+        ixy="-1.82442379996401E-08"
+        ixz="2.19220414207621E-08"
+        iyy="0.00227955322531643"
+        iyz="0.000455862680690907"
+        izz="0.0013562217526855" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.077"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="L_Link0" />
+    <child
+      link="L_Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.05" upper="3.05" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Link2">
+    <inertial>
+      <origin
+        xyz="0.139348427532377 -4.23851928554875E-07 -0.0625"
+        rpy="0 0 0" />
+      <mass
+        value="5.92603915355982" />
+      <inertia
+        ixx="0.01448818497016"
+        ixy="2.15059750987002E-07"
+        ixz="5.63035704670725E-19"
+        iyy="0.0851926836667449"
+        iyz="2.95138272529476E-18"
+        izz="0.0842484750078429" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.02000000004507 0.099"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="L_Link1" />
+    <child
+      link="L_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.92" upper="1.92" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Link3">
+    <inertial>
+      <origin
+        xyz="1.9971346854053E-06 -0.0931722519978284 -0.00398594796753832"
+        rpy="0 0 0" />
+      <mass
+        value="1.49872569422004" />
+      <inertia
+        ixx="0.00607159631816978"
+        ixy="-1.33613077412279E-07"
+        ixz="-1.0520146102431E-07"
+        iyy="0.00267661918576394"
+        iyz="-0.00109230728786293"
+        izz="0.0055545841699643" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint3"
+    type="revolute">
+    <origin
+      xyz="0.300000000000001 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="L_Link2" />
+    <child
+      link="L_Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.04" upper="4.18" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Link4">
+    <inertial>
+      <origin
+        xyz="3.15202782763535E-08 -0.0195437106650877 0.067913156972177"
+        rpy="0 0 0" />
+      <mass
+        value="0.963740965126838" />
+      <inertia
+        ixx="0.00207993370985513"
+        ixy="-5.67748363241927E-09"
+        ixz="-9.95491786488217E-10"
+        iyy="0.0013902553175191"
+        iyz="0.000199413122342462"
+        izz="0.0016310667850462" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint4"
+    type="revolute">
+    <origin
+      xyz="0 -0.171500316895 -0.0200000000450658"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="L_Link3" />
+    <child
+      link="L_Link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Link5">
+    <inertial>
+      <origin
+        xyz="-0.66428904513872 0.00957852184176511 -0.0320985497418236"
+        rpy="0 0 0" />
+      <mass
+        value="175.367726207666" />
+      <inertia
+        ixx="27.0827900082943"
+        ixy="-0.00565766052899831"
+        ixz="0.00521759103686818"
+        iyy="9.00372824828341"
+        iyz="0.140935562418403"
+        izz="33.8345370938473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.0384000000449831 0.078500000000352"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="L_Link4" />
+    <child
+      link="L_Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Link6">
+    <inertial>
+      <origin
+        xyz="0 0 0.00405"
+        rpy="0 0 0" />
+      <mass
+        value="0.0407150407905237" />
+      <inertia
+        ixx="1.65086258017317E-05"
+        ixy="5.10053814653345E-68"
+        ixz="-1.27462438672038E-38"
+        iyy="1.65086258017317E-05"
+        iyz="-6.43075041657268E-35"
+        izz="3.2572032632419E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint6"
+    type="revolute">
+    <origin
+      xyz="-0.165899999951562 0 -0.0384000000449933"
+      rpy="-1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="L_Link5" />
+    <child
+      link="L_Link6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="L_Tool">
+    <inertial>
+      <origin
+        xyz="0.0340981173951087 -6.93889390390723E-16 0.0588979334631066"
+        rpy="0 0 0" />
+      <mass
+        value="0.342557475007462" />
+      <inertia
+        ixx="0.000669120214776935"
+        ixy="1.47101560838997E-20"
+        ixz="-6.28094347814483E-05"
+        iyy="0.000647026325676492"
+        iyz="1.375711018752E-18"
+        izz="0.000206282232017473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/L_Tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Joint7"
+    type="fixed">
+    <origin
+      xyz="0 0 0.00809999999999989"
+      rpy="0 0 0" />
+    <parent
+      link="L_Link6" />
+    <child
+      link="L_Tool" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_Link0">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 0 0.0385"
+        rpy="0 0 0" />
+      <mass
+        value="1.5871231838156" />
+      <inertia
+        ixx="0.00338744991532377"
+        ixy="4.01869884482777E-34"
+        ixz="-2.65123849230091E-34"
+        iyy="0.00338744991532377"
+        iyz="-1.30420069286201E-35"
+        izz="0.00520655760450708" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint0"
+    type="fixed">
+    <origin
+      xyz="0 -0.373017582523179 0.949999999999997"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_Link0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_Link1">
+    <inertial>
+      <origin
+        xyz="1.69435974783916E-06 -0.0386731146770461 0.0598560183681658"
+        rpy="0 0 0" />
+      <mass
+        value="0.822277875182315" />
+      <inertia
+        ixx="0.00232179687939315"
+        ixy="-1.82442379998173E-08"
+        ixz="2.19220414223084E-08"
+        iyy="0.00227955322531644"
+        iyz="0.000455862680690907"
+        izz="0.0013562217526855" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.077"
+      rpy="0 0 0" />
+    <parent
+      link="R_Link0" />
+    <child
+      link="R_Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.05" upper="3.05" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Link2">
+    <inertial>
+      <origin
+        xyz="0.139348427532378 -4.23851928554875E-07 -0.0625"
+        rpy="0 0 0" />
+      <mass
+        value="5.92603915355982" />
+      <inertia
+        ixx="0.0144881849701601"
+        ixy="2.15059751012769E-07"
+        ixz="3.0568231913932E-18"
+        iyy="0.085192683666745"
+        iyz="-2.93815407837749E-18"
+        izz="0.084248475007843" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.02000000004507 0.099"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="R_Link1" />
+    <child
+      link="R_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.92" upper="1.92" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Link3">
+    <inertial>
+      <origin
+        xyz="1.99713468551632E-06 -0.0931722519978285 -0.00398594796753832"
+        rpy="0 0 0" />
+      <mass
+        value="1.49872569422004" />
+      <inertia
+        ixx="0.00607159631816978"
+        ixy="-1.33613077412036E-07"
+        ixz="-1.05201461024412E-07"
+        iyy="0.00267661918576394"
+        iyz="-0.00109230728786293"
+        izz="0.0055545841699643" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint3"
+    type="revolute">
+    <origin
+      xyz="0.300000000000001 0 0"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="R_Link2" />
+    <child
+      link="R_Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.04" upper="4.18" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Link4">
+    <inertial>
+      <origin
+        xyz="-3.15202781653312E-08 0.0195437106650877 0.0679131569721771"
+        rpy="0 0 0" />
+      <mass
+        value="0.963740965126839" />
+      <inertia
+        ixx="0.00207993370985513"
+        ixy="-5.67748363163396E-09"
+        ixz="9.95491787207619E-10"
+        iyy="0.00139025531751911"
+        iyz="-0.000199413122342463"
+        izz="0.0016310667850462" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint4"
+    type="revolute">
+    <origin
+      xyz="0 -0.171500316895 -0.0200000000450658"
+      rpy="-1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="R_Link3" />
+    <child
+      link="R_Link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Link5">
+    <inertial>
+      <origin
+        xyz="-0.0915463083048482 0.000329325832841398 -0.0239111045020714"
+        rpy="0 0 0" />
+      <mass
+        value="1.01759063356361" />
+      <inertia
+        ixx="0.00139529692320746"
+        ixy="2.62695257025733E-06"
+        ixz="-0.000483372202426152"
+        iyy="0.00289184686746942"
+        iyz="-1.05479372519952E-05"
+        izz="0.00246252797298187" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint5"
+    type="revolute">
+    <origin
+      xyz="0 -0.0384000000449831 0.0784999999996449"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="R_Link4" />
+    <child
+      link="R_Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Link6">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 0 0.00405000000000005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0407150407905237" />
+      <inertia
+        ixx="1.65086258017317E-05"
+        ixy="0"
+        ixz="1.27462438672038E-38"
+        iyy="1.65086258017317E-05"
+        iyz="-2.81602611131832E-38"
+        izz="3.2572032632419E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint6"
+    type="revolute">
+    <origin
+      xyz="-0.165899999951562 0 -0.0384000000450123"
+      rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="R_Link5" />
+    <child
+      link="R_Link6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28" upper="6.28" effort="1000" velocity="1" />
+  </joint>
+  <link
+    name="R_Tool">
+    <inertial>
+      <origin
+        xyz="0.0340981173951113 -5.96744875736022E-16 0.0588979334631067"
+        rpy="0 0 0" />
+      <mass
+        value="0.342557475007462" />
+      <inertia
+        ixx="0.000669120214776935"
+        ixy="3.38282750648957E-19"
+        ixz="-6.28094347814486E-05"
+        iyy="0.000647026325676493"
+        iyz="2.37653920033466E-18"
+        izz="0.000206282232017472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="https://raw.githubusercontent.com/tgk0825/meshs/blob/main/R_Tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Joint7"
+    type="fixed">
+    <origin
+      xyz="0 0 0.00809999999999994"
+      rpy="0 0 0" />
+    <parent
+      link="R_Link6" />
+    <child
+      link="R_Tool" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
